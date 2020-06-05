@@ -1,0 +1,27 @@
+{
+  "name": "Pro-Googler",
+  "version": "1.0.0",
+  "description": "A Simple Quiz App for College Event",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-windows": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Pro Googler\"",
+    "package-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64  --prune=true --out=release-builds"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Rohan Keskar",
+  "license": "CC0-1.0",
+"devDependencies": {
+"electron" : "^3.0.4"
+}, 
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "mongojs": "^3.1.0",
+  }
+}
